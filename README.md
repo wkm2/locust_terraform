@@ -3,6 +3,14 @@
 ## Architecture
 ![locust_architecture](https://github.com/wkm2/locust_terraform/blob/master/locust_architecture.png)
 
+## Setting
+Replace the locust_dashboard_client_ip variable in locustfile.py with your global IP
+```
+variable "locust_dashboard_client_ip" {
+  default = "xxx.xxx.xxx.xxx/xx"
+}
+```
+
 ## Deploy
 ```
 $ terraform apply
